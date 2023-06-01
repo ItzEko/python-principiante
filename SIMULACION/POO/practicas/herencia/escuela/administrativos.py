@@ -5,10 +5,10 @@ class Administrativos(Persona):
         self.areaAcademica=h
         self.areaDependencia=i
     def mostrarDatosAdministrativos(self):
+        infoPerson=self.mostrarDatos(12,'Itzel','Guzman','F','123456')
         infoAdminDepnd=print(f'Dependencia: {self.areaDependencia}')
         infoAdminArea=print(f'Area Academica: {self.areaAcademica}')
         return infoAdminArea, infoAdminDepnd
 objPersona=Persona()
-objPersona.mostrarDatos(12,'Itzel','Guzman','F','123456')
 objAdministrativos=Administrativos('Ing.Forestal','none')
 objAdministrativos.mostrarDatosAdministrativos()
